@@ -46,7 +46,8 @@ def get_port_distance_boh(portindex):
 
 def render_menu(msg):
     clear()
-    print(msg)
+    if msg != None:
+        print(msg)
     print("Choose one of the following options:")
     print("1 Enter airport details")
     print("2 Enter flight details")
@@ -173,4 +174,4 @@ while loop:
         msg = "Invalid input"
 clear()
 print("Thank you for using Airport Cost Calculator 1.0")
-print(f"{ukport}, {ovport}, {planechoice}, {fclassnum}")
+#print(f"{ukport}, {ovport}, {planechoice}, {fclassnum}")
