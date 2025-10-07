@@ -51,7 +51,7 @@ def render_menu(msg):
     print("Choose one of the following options:")
     print("1 Enter airport details")
     print("2 Enter flight details")
-    print("3 Enter pricle plan and calculate profit")
+    print("3 Enter price plan and calculate profit")
     print("4 Clear data")
     print("5 Quit")
     choice = input("Enter a number corresponding to the option you want to select: ")
@@ -147,7 +147,7 @@ while loop:
         if ukport == None or ovport == None:
             msg = "Select the airports first"
         elif planechoice == None or fclassnum == None:
-            msg = "Select the plane details first"
+            msg = "Select the flight details first"
         else:
             if ukport == "LPL":
                 if planeinfo[planechoice][2] < int(get_port_distance_lpl(get_port_index(ovport))):
